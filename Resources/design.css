@@ -1,0 +1,312 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Edu TAS Beginner", cursive;
+  background-color: #fff;
+  color: #555;
+  font-size: 20px;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+}
+
+.row {
+  max-width: 1840px;
+  margin: 0 auto;
+}
+.navigation {
+  background-image: linear-gradient(
+    to bottom right,
+    rgba(6, 55, 200, 0.744),
+    rgba(0, 108, 240, 0.658)
+  );
+  font-weight: 600;
+  font-size: 1.3rem;
+}
+
+.main-nav {
+  float: right;
+  list-style: none;
+  margin-top: 45px;
+}
+
+.main-nav li {
+  display: inline-block;
+  margin-left: 40px;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+  padding: 8px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 90%;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.2s;
+}
+
+.main-nav li a:hover,
+.main-nav li a:active {
+  border-bottom: 2px solid white;
+}
+
+.logo {
+  height: 80px;
+  width: auto;
+  float: left;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border-radius: 20px;
+}
+
+a:link,
+a:visited {
+  color: blue;
+  text-decoration: none;
+  border-bottom: 1px solid blue;
+  padding-bottom: 2px;
+  transition: border 0.2s, color 0.2s;
+}
+
+a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid transparent;
+}
+
+.plans {
+  background-color: #e7e5e5;
+  height: 65vh;
+}
+
+.plan-box {
+  background-color: #fff;
+  border-radius: 10px;
+  width: 90%;
+  height: 21.5rem;
+  margin-left: 5%;
+}
+.plan-box div:last-child {
+  text-align: center;
+}
+
+.plan-box div {
+  padding: 15px;
+  border-bottom: 1px solid #f3f3f3;
+}
+
+.plans-price {
+  font-size: 300%;
+  margin-bottom: 10px;
+  font-weight: 100;
+  color: #e67e22;
+}
+.plans-meal {
+  font-size: 80%;
+}
+.plans-price span {
+  font-size: 30%;
+  font-weight: 300;
+}
+
+.plan-box ul {
+  list-style: none;
+}
+.plan-box ul li {
+  padding: 6px 0;
+}
+
+h3 {
+  font-size: 20rem;
+}
+
+h2 {
+  margin: 20px 0px;
+  text-align: center;
+  font-size: 200%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+h2:after {
+  display: block;
+  height: 2px;
+  background-color: blue;
+  content: " ";
+  width: 150px;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+#fullForm{
+  text-align: center;
+  padding: 5px;
+  font-size: 140%;
+}
+h4  {
+  text-align: center;
+  padding: 0;
+}
+
+.user_info {
+  display: none;
+}
+
+.visible {
+  display: block !important;
+}
+.user_login {
+  position: fixed;
+  top: 12rem;
+  left: 38rem;
+  width: 25%;
+  height: 60%;
+  background-color: white;
+  box-shadow: 5px 5px 50px black;
+  border-radius: 15px;
+}
+
+.login h1 {
+  font-weight: 800;
+  margin: 3rem 0rem 4rem 8rem;
+  font-size: 2.5rem;
+}
+.signup-main h1{
+  font-weight: 800;
+  margin: 2rem 0rem 2rem 8rem;
+  font-size: 2.5rem;  
+}
+.contact-form {
+  margin-left: 3rem;
+}
+.contact-form label {
+  font-size: 1.5rem;
+}
+.contact-form input {
+  margin-left: 1.5rem;
+  border-radius: 50px;
+  font-size: 1.3rem;
+  padding: 3px;
+}
+.username {
+  margin-bottom: 1.3rem;
+}
+input[type="submit"] {
+  padding: 4px 30px;
+  margin: 2rem 0 1rem 0;
+}
+
+#signup-bttn {
+  text-decoration: none;
+  color: blue;
+}
+#btn {
+  margin-left: 3rem;
+}
+.close {
+  background-image: linear-gradient(rgba(51, 51, 51, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100vh;
+  position: fixed;
+  width: 100%;
+  display: none;
+  z-index: 25;
+}
+.user_info{
+  z-index: 50;
+}
+/* *******************************footer****************************************** */
+footer{
+  height: 23.3vh;
+  background-color: #d3d0d0;
+}
+#copyh4{
+  float: right;
+  margin-top: 50px;
+}
+
+#lvm{
+  font-size: 25px !important;
+}
+#ftr {
+  margin-top: 0;
+  text-align: center;
+}
+
+#devo li{
+  margin-top: 50px;
+  display: inline-block;
+  margin-left: 18%;
+}
+#devo a:link ,a:visited{
+  color:rgb(67, 67, 98);  
+  border-bottom: 1px solid transparent;
+  text-decoration: none !important;
+}
+#devo a:hover,
+a:active {
+  color: #555;
+  border-bottom: 1px solid  #555;
+}
+
+/**********************************************cards********************************/
+.card {
+  color: inherit;
+  cursor: pointer;
+  height: 18rem;
+  min-height: 400px;
+  perspective: 1000px;
+  width: 18.25rem;
+  position: relative;
+}
+
+.front,
+.back {
+  display: flex;
+  border-radius: 6px;
+  background-position: center;
+  background-size: cover;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: ease-in-out 600ms;
+}
+
+.back {
+  background-size: cover;
+  padding: 2rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  overflow:hidden;
+}
+
+.back:hover {
+  transform: rotateY(180deg);
+}
+.card:nth-child(even):hover.back {
+    transform: rotateY(-180deg);
+  }
+
+.front {
+  background-image: linear-gradient(135deg , rgba(0, 108, 240, 0.2), rgba(0, 108, 240, 0.2));
+  transform: rotateY(0deg);
+  padding: 0 2em;
+}
+
+.card:nth-child(even).front {
+    transform: rotateY(180deg);
+}
+.backImg{
+    height: 20rem;
+    width: 18.25rem;
+}
+/* ul{
+  list-style: none;
+} */

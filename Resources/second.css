@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  html {
+    font-family: "Edu TAS Beginner", cursive;
+    background-color: #fff;
+    color: #555;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+  }
+  
+  .row {
+    max-width: 1840px;
+    margin: 0 auto;
+  }
+.col{
+    margin: 0% !important;
+}
+  /* *********************************navigation********************************* */
+  .navigation {
+    background-image: linear-gradient(
+      to bottom right,
+      rgba(6, 55, 200, 0.744),
+      rgba(0, 108, 240, 0.658)
+    );
+    font-weight: 600;
+    font-size: 1.3rem;
+    height: 11vh;
+  }
+  
+  .main-nav {
+    float: right;
+    list-style: none;
+    margin-top: 45px;
+  }
+  
+  .main-nav li {
+    display: inline-block;
+    margin-left: 40px;
+  }
+  
+  .main-nav li a:link,
+  .main-nav li a:visited {
+    padding: 8px 0;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.2s;
+  }
+  
+  .main-nav li a:hover,
+  .main-nav li a:active {
+    border-bottom: 2px solid white;
+  }
+  
+  .logo {
+    height: 80px;
+    width: auto;
+    float: left;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 20px;
+  }
+  
+  a:link,
+  a:visited {
+    color: blue;
+    text-decoration: none;
+    border-bottom: 1px solid blue;
+    padding-bottom: 2px;
+    transition: border 0.2s, color 0.2s;
+  }
+  
+  a:hover,
+  a:active {
+    color: #555;
+    border-bottom: 1px solid transparent;
+  }
+  #fullForm{
+    text-align: center;
+    padding: 5px;
+    font-size: 140%;
+  }
+ /**************************sidebar******************* */ 
+  .sidenav {
+    height: 89vh;
+    width: 400px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e7e5e5;
+    position: absolute;
+    top: 0;
+    font-size: 36px;
+    margin-top: 11vh;
+    transition: 0.5s;
+    padding-top: 30px;
+  }
+  .sidenav a {
+   
+    text-decoration: none;
+    font-size: 25px;
+    color: #2c2b2b;
+    display: block;
+    transition: 0.3s;
+    padding-top: 20px;
+    text-align: center;
+  }
+  select{
+    border-style: none;
+  }
+  .sidenav a:hover {
+    color: #828181;
+  }
+  #choose{
+    font-size: 20px;
+    margin-top: 0;
+    text-align: center;
+  } 
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+  /* ***********************************subject******************** */
+.firstsubject{
+  display: none;
+}
+.visible{
+  display:block;
+}

@@ -1,0 +1,118 @@
+/*color----- #0D5699 */
+/*light color----- #2566A3 */
+
+* {
+  font-family: 'Edu TAS Beginner', cursive;
+  color: #fff;
+}
+
+body {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+    url(/Resources/img/background4.0.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.row {
+  max-width: 1840px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 400%;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 35%;
+  text-shadow: 4px 4px 7px black;
+}
+h1:after {
+  display: block;
+  height: 3px;
+  background-color: #0d5699;
+  content: ' ';
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+h2 {
+  font-size: 400%;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10%;
+  text-shadow: 4px 4px 7px black;
+}
+p {
+  font-size: 250%;
+  font-weight: 300;
+  text-align: center;
+  text-shadow: 4px 4px 7px #0d5699;
+}
+em {
+  color: #0d5699;
+}
+#logoImg {
+  height: 14%;
+  width: 14%;
+  margin-top: 3%;
+  border-radius: 8%;
+}
+
+.text {
+  font-size: 1.9rem;
+  text-align: center;
+  text-shadow: 4px 4px 7px black;
+  font-weight: 700;
+}
+.login div {
+  line-height: 5rem;
+}
+input[type='text'],
+input[type='password'] {
+  border-radius: 200px;
+  border-style: double;
+  border-width: 6px;
+  padding: 5px;
+  width: 90%;
+  font-weight: 400;
+}
+input[type='submit'] {
+  padding: 5px 20px 5px 20px;
+  border-radius: 200px;
+  border-style: none;
+  margin-top: 7%;
+  color: white;
+  font-weight: 500;
+  margin: 15% 0%;
+  background-color: #0d5699;
+  font-size: 1.7rem;
+}
+input[type='submit']:hover {
+  background-color: #2566a3;
+  color: white;
+}
+#signup {
+  text-decoration: none;
+  color: #0d5699;
+}
+#signup:hover {
+  color: #2566a3;
+}
+
+.login {
+  display: none;
+}
+
+.signup-main{
+  display: block;
+}
+
+.visible{
+  display: block;
+  animation: fade-slide-in 0.3s ease-out forwards;
+}
+
+.hover{
+  display: none;
+  height: 120%;
+
+}
+
