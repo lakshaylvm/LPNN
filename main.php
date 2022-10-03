@@ -4,12 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="/Resources/design.css" rel="stylesheet" />
-    <link href="/Vendors/css/grid.css" rel="stylesheet" />
-    <link href="/Vendors/css/normalize.css" rel="stylesheet" />
+    <link href="./Resources/design.css" rel="stylesheet" />
+    <link href="./Vendors/css/grid.css" rel="stylesheet" />
+    <link href="./Vendors/css/normalize.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="/Resources/app.js" defer></script>
+    <script src="./Resources/app.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Montserrat:ital,wght@0,100;0,300;0,600;1,300&display=swap"
@@ -45,7 +45,7 @@
               stands for learning. It is a process that leads to change, which occurs as a result of experience and increases the potential for improved performance and future learning. The change in the learner may happen at the level of knowledge, attitude or behavior. As a result of learning, learners come to see concepts, ideas, and/or the world differently.</p>              
             </div>
             <div class="back">
-              <img src="/Resources/img/suar.jpeg" class="backImg" >
+              <img src="./Resources/img/suar.jpeg" class="backImg" >
             </div>           
           </div>
         </div>
@@ -57,7 +57,7 @@
               <p><span style="font-size: 40px;">P:</span> stands for path . It is described as the chosen route taken by a learner through a range ofe-learning activities, which allows them to build knowledge progressively. With learning path, the control of choice moves away from the tutor to the learner. For any particular topic, such a path would provide both a theory of instruction and a guideline for teachers and curriculum developers"</p>
             </div>
             <div class="back">
-                <img src="/Resources/img/sakshi.jpeg" class="backImg">
+                <img src="./Resources/img/sakshi.jpeg" class="backImg">
             </div>
           </div>
             
@@ -70,7 +70,7 @@
                 <p><span style="font-size: 40px;">N:</span>stands for newbies. It  is a point for those students who has just started learning a activity and fresher in the current field. Superiors of the newbies will help them by giving thier notes or study material by uploading in the LPNN!!</p>
               </div>
             <div class="back">
-                <img src="/Resources/img/lolodile.jpeg" class="backImg">
+                <img src="./Resources/img/lolodile.jpeg" class="backImg">
             </div>
             </div>      
           </div>
@@ -119,7 +119,7 @@
     <div class="user_info user_login" id="log">
     <div class="col login ">
       <h1>LOGIN</h1>
-      <form method="post" action="#" class="contact-form">
+      <form method="post" action="./validation.php" class="contact-form">
         <div class="row text">
           <div class="row username">
             <div class="col span-1-of-3">
@@ -128,7 +128,7 @@
             <div class="col span-2-of-3">
               <input
                 type="text"
-                name="name"
+                name="username"
                 id="name"
                 placeholder="User Name"
                 required
@@ -170,7 +170,7 @@
     <div class="user_info user_login" id="signups">
     <div class="col signup-main">
       <h1 class="log">SIGN UP</h1>
-      <form method="post" action="#" class="contact-form">
+      <form method="post" action="./conn.php" class="contact-form">
         <div class="row text">
           <div class="row sign">
             <div class="col span-1-of-3">
@@ -193,7 +193,7 @@
             <div class="col span-2-of-3">
               <input
                 type="text"
-                name="name"
+                name="username"
                 id="name"
                 placeholder="User Name"
                 required
@@ -216,12 +216,12 @@
           </div>
           <div class="row sign">
             <div class="col span-1-of-3">
-              <label for="email">Confirm</label>
+              <label for="confirm">Confirm</label>
             </div>
             <div class="col span-2-of-3">
               <input
                 type="password"
-                name="password"
+                name="confirm"
                 id="password"
                 placeholder="Confirm Password"
                 required
@@ -236,17 +236,19 @@
               <ul>
              <li> <input
                 type="radio"
-                name="name"
+                name="user"
                 id="name"
                 placeholder="Teacher"
+                value="teacher"
                 required
               />
               <label>Teacher</label></li>
               <li><input
                 type="radio"
-                name="name"
+                name="user"
                 id="name"
                 placeholder="Student"
+                value="student"
                 required
               />
               <label>Student</label></li>

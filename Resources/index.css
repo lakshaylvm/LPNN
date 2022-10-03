@@ -217,6 +217,9 @@ ul.CTAs a {
     min-height: 88vh;
     transition: all 0.3s;
 }
+#flt-rt{
+  float: right;
+}
 
 /* ---------------------------------------------------
     MEDIAQUERIES

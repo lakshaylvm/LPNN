@@ -2,8 +2,8 @@
 <html>
 
 <head>
-    <link href="/Vendors/css/grid.css" rel="stylesheet" />
-    <link href="/Vendors/css/normalize.css" rel="stylesheet" />
+    <link href="./Vendors/css/grid.css" rel="stylesheet" />
+    <link href="./Vendors/css/normalize.css" rel="stylesheet" />
     <title>notes:)</title>
     <!-- Bootstrap CSS CDN -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
@@ -12,9 +12,9 @@
 </head>
 <body> <header>
     <nav class="navigation">
-      <div >
+      <div>
         <img src="Resources/img/logo.jpeg"  id="logo" alt="logo" />
-        <ul class="main-nav" class="col span-1-of-5">
+        <ul class="main-nav">
           <li><a href="#" id="pp"><span style="font-family:cursive;">UPLOAD</span></a></li>
           <li><a href="./main.html" id="up">LOG OUT</a></li>
         </ul>
@@ -22,6 +22,7 @@
     </nav>
   </header>
     <div class="wrapper">
+        
         <!-- Sidebar  -->
         <nav id="sidebar">
             <div class="sidebar-header">
@@ -118,18 +119,22 @@
                 <li>
                     <a href="#semeighth" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Eighth Semester</a>
                     <ul class="collapse list-unstyled" id="semeighth">
-                        <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
                 <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
                 <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
                 <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
                     </ul>
                 </li>
             </ul>
+
             </div>
         </nav>
-        <div id="content">          
         </div>
-    </div>
+        <div  class="row" id="flt-rt">
+            <div class="col span-2-of-4">pp ka pyar thano</div>      
+            <div class="col span-2-of-4">thano ka pyar sakshi</div>
+        </div>
+   
+    
 
     <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
