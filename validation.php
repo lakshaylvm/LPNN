@@ -1,25 +1,22 @@
 <?php
-$localhost = "localhost";
-$username = "root";
-$password = "";
-$database = "lpnn";
-$conn = mysqli_connect('localhost','root','','lpnn');
-mysqli_select_db($conn,'lpnn');
+session_start();
+$con =new mysqli("localhost","root","","lpnn");
+
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$query = "SELECT * FROM `registration` WHERE username = '$username' && password = '$password'";
+$query = "SELECT * FROM `register` WHERE username = '$username' && password = '$password'";
 
-$result = $conn->query($query);
-
+$result = $con->query($query);
 $data = $result ->  fetch_assoc();
 
-$num = mysqli_num_rows($result);
-if($num == 1){
 
-    header('location:./main.php');
-}
-else{
+
+$num = mysqli_num_rows($result);
+if($num==1){
+    $user= $data['username'] ;
     header('location:./notes.php');
 }
+else{
+    header('location:./main.php');}
 ?>

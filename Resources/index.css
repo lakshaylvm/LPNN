@@ -12,11 +12,11 @@
     text-rendering: optimizeLegibility;
   }
   
-  .row {
-    max-width: 1840px;
-    margin: 0 auto;
-    display:inline;
-  }
+ .row {
+    margin-right: 0px;
+    margin-left:0px;
+ }
+  
 .col{
     margin: 0% !important;
 }
@@ -120,18 +120,19 @@ a:focus {
 
 /* ---------------------------------------------------
     SIDEBAR STYLE
------------------------------------------------------ */
+/----------------------------------------------------- */
 
-.wrapper {
+/* .wrapper {
     display: flex;
     width: 100%;
     align-items: stretch;
     height: 88vh;
-}
+} */
 
 #sidebar {
-    min-width: 250px;
-    max-width: 250px;
+  padding:0px;
+    /* min-width: 250px;
+    max-width: 250px; */
     background-image: linear-gradient(
         to bottom right,
         rgba(0, 108, 240, 0.658),
@@ -156,12 +157,12 @@ a:focus {
 
 #sidebar ul p {
     color: #fff;
-    padding: 10px;
+    padding: 0px;
 }
 
 #sidebar ul li a {
-    padding: 10px;
-    font-size: 1.1em;
+    padding: 12px;
+    font-size: 1.01em;
     display: block;
 }
 
@@ -220,6 +221,19 @@ ul.CTAs a {
 #flt-rt{
   float: right;
 }
+#donate{
+  background-color: aqua;
+  /* height: 88vh; */
+}
+#donate1{
+  background-color: red;
+  /* height: 88vh; */
+}
+#donate2{
+  background-color: greenyellow;
+  /* height: 88vh; */
+}
+
 
 /* ---------------------------------------------------
     MEDIAQUERIES

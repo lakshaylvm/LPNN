@@ -16,15 +16,16 @@
         <img src="Resources/img/logo.jpeg"  id="logo" alt="logo" />
         <ul class="main-nav">
           <li><a href="#" id="pp"><span style="font-family:cursive;">UPLOAD</span></a></li>
-          <li><a href="./main.html" id="up">LOG OUT</a></li>
+          <li><a href="./main.php " id="up">LOG OUT</a></li>
         </ul>
         </div>
     </nav>
   </header>
-    <div class="wrapper">
+  <div class = "small-container">
+    <div class=" row">
         
         <!-- Sidebar  -->
-        <nav id="sidebar">
+        <nav id="sidebar" class="col-2">
             <div class="sidebar-header">
                 <h3>Choose Semester</h3>
             </div>
@@ -128,11 +129,22 @@
 
             </div>
         </nav>
-        </div>
-        <div  class="row" id="flt-rt">
-            <div class="col span-2-of-4">pp ka pyar thano</div>      
-            <div class="col span-2-of-4">thano ka pyar sakshi</div>
-        </div>
+       
+        
+            <div class="col text-center" id="donate1">
+                <img src="./Resources/img/baba.jpg" class ="rounded pt-5" height="35%" width="60%">
+                <!-- <img src="./Resources/img/baba.jpg" class ="rounded pt-5" height="35%" width="60%"> -->
+            </div>
+             <div class="col text-center" id="donate2" >
+            <img src="./Resources/img/panda.jpeg" class ="rounded pt-5" height="35%" width="60%">
+            <!-- <img src="./Resources/img/panda.jpeg" class ="rounded pt-5" height="35%" width="60%"> -->
+            </div>
+            <div class="col-1" id="donate">pp k naam p donation dede</div>
+        
+</div>
+        
+</div>
+       
    
     
 

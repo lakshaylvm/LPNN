@@ -41,3 +41,16 @@ signup_button.addEventListener('click',toggle_signup);
 areaBlur.addEventListener('click',removeDiv);
 logInLink.addEventListener('click',toggleLink);
 signUpLink.addEventListener('click' , toggleLink);
+
+
+// function Validate() {
+//     var password = document.getElementById("password").value;
+//     var confirmPassword = document.getElementById("txtConfirmPassword").value;
+//     if (password != confirmPassword) {
+//         alert("Passwords do not match.");
+//         return false;
+//     }
+//     return true;
+// }
+// var tunnu = document.getElementById('thuk');
+// tunnu.addEventListener('click',Validate());

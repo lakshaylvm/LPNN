@@ -15,9 +15,11 @@
       href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Montserrat:ital,wght@0,100;0,300;0,600;1,300&display=swap"
       rel="stylesheet"
     />
+    <!-- <script type="text/javascript" src="/password.js" defer></script> -->
     <title>LPNN!!</title>
   </head>
   <body>
+  
     <div  class="close" id="blur"></div>
     <header>
       <nav class="navigation">
@@ -202,7 +204,7 @@
           </div>
           <div class="row sign">
             <div class="col span-1-of-3">
-              <label for="email">Password</label>
+              <label for="email" >Password</label>
             </div>
             <div class="col span-2-of-3">
               <input
@@ -212,6 +214,7 @@
                 placeholder="Password"
                 required
               />
+              <span id = "message" style="color:red"> </span> 
             </div>
           </div>
           <div class="row sign">
@@ -222,9 +225,9 @@
               <input
                 type="password"
                 name="confirm"
-                id="password"
                 placeholder="Confirm Password"
                 required
+                id="txtConfirmPassword"
               />
             </div>
           </div>
@@ -260,7 +263,7 @@
               <label>&nbsp;</label>
             </div>
             <div class="col span-2-of-3">
-              <input type="submit" value="Sign up" />
+              <input type="submit" value="Sign up" id="thuk"/>
             </div>
           </div>
           <div id="ftr">
@@ -273,3 +276,4 @@
     
   </body>
 </html>
+

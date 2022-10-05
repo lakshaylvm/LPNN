@@ -5,19 +5,30 @@ $password = "";
 $database = "lpnn";
 $conn = mysqli_connect('localhost','root','','lpnn');
 
-if($conn){
-    echo "Connection successful";
+
+
+mysqli_select_db($conn,'lpnn');
+$name= isset($_POST['name']);
+$username= isset($_POST['username']);
+$password= isset($_POST['password']);
+$confirm= isset($_POST['confirm']);
+$user= isset($_POST['user']);
+$query = "INSERT INTO `register`(`name`, `username`, `password`, `confirm`, `user`) VALUES ('$name','$username','$password','$confirm','$user')";
+$result = mysqli_query($conn,$query);
+
+ if($conn){
+    // header('location:./notes.php');
+    // echo "<script> alert(' Please enter same password');</script>";
+    // header('location:./main.php');
+    if ($password != $confirm) {
+   
+        echo "<script> alert(' Success ')</script>"; }
+     else {
+        echo "<script> alert(' Please enter same password');</script>";
+     }
 }
+    
 else{
     echo "No connection";
 }
-
-mysqli_select_db($conn,'lpnn');
-$name= $_POST['name'];
-$username= $_POST['username'];
-$password= $_POST['password'];
-$confirm= $_POST['confirm'];
-$user= $_POST['user'];
-$query = "INSERT INTO `registration`(`name`, `username`, `password`, `confirm`, `user`) VALUES ('$name','$username','$password','$confirm','$user')";
-mysqli_query($conn,$query);
 ?>
