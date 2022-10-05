@@ -20,7 +20,7 @@ $result = mysqli_query($conn,$query);
     // header('location:./notes.php');
     // echo "<script> alert(' Please enter same password');</script>";
     // header('location:./main.php');
-    if ($password != $confirm) {
+    if ($password !== $confirm) {
    
         echo "<script> alert(' Success ')</script>"; }
      else {
