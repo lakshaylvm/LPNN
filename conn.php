@@ -18,14 +18,8 @@ $result = mysqli_query($conn,$query);
 
  if($conn){
     // header('location:./notes.php');
-    // echo "<script> alert(' Please enter same password');</script>";
+    echo "<script> alert(' Please enter same password');</script>";
     // header('location:./main.php');
-    if ($password !== $confirm) {
-   
-        echo "<script> alert(' Success ')</script>"; }
-     else {
-        echo "<script> alert(' Please enter same password');</script>";
-     }
 }
     
 else{

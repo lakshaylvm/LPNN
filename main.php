@@ -217,7 +217,7 @@
               <span id = "message" style="color:red"> </span> 
             </div>
           </div>
-          <div class="row sign">
+          <!-- <div class="row sign">
             <div class="col span-1-of-3">
               <label for="confirm">Confirm</label>
             </div>
@@ -230,7 +230,7 @@
                 id="txtConfirmPassword"
               />
             </div>
-          </div>
+          </div> -->
           <div class="row sign">
             <div class="col span-1-of-3">
               <label for="name">User</label>
