@@ -4,25 +4,25 @@ $username = "root";
 $password = "";
 $database = "lpnn";
 $conn = mysqli_connect('localhost','root','','lpnn');
-
-
+session_start();
+if($conn){
+    header("location:./index.php");
+}
+// else{
+//     echo "No connection";
+// }
 
 mysqli_select_db($conn,'lpnn');
-$name= isset($_POST['name']);
-$username= isset($_POST['username']);
-$password= isset($_POST['password']);
-$confirm= isset($_POST['confirm']);
-$user= isset($_POST['user']);
+$name= $_POST['name'];
+$username= $_POST['username'];
+$password= $_POST['password'];
+$confirm= $_POST['confirm'];
+$user= $_POST['user'];
 $query = "INSERT INTO `register`(`name`, `username`, `password`, `confirm`, `user`) VALUES ('$name','$username','$password','$confirm','$user')";
-$result = mysqli_query($conn,$query);
-
- if($conn){
-    // header('location:./notes.php');
-    echo "<script> alert(' Please enter same password');</script>";
-    // header('location:./main.php');
+if($password==$confirm){
+    mysqli_query($conn,$query);
 }
-    
 else{
-    echo "No connection";
+    echo"<script type='text/jscript'>alert('Please enter the same password')</script>"; 
 }
 ?>

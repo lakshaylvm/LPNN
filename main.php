@@ -1,279 +1,185 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./Resources/design.css" rel="stylesheet" />
+<html>
+
+<head>
     <link href="./Vendors/css/grid.css" rel="stylesheet" />
     <link href="./Vendors/css/normalize.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <script src="./Resources/app.js" defer></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link
-      href="https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner:wght@400;600&family=Montserrat:ital,wght@0,100;0,300;0,600;1,300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- <script type="text/javascript" src="/password.js" defer></script> -->
-    <title>LPNN!!</title>
-  </head>
-  <body>
-  
-    <div  class="close" id="blur"></div>
-    <header>
-      <nav class="navigation">
-        <div class="row">
-          <img src="Resources/img/logo.jpeg" class="logo" alt="logo" />
-          <ul class="main-nav">
-            <li><a href="#" id="pp">Log In</a></li>
-            <li><a href="#" id="up">Sign Up</a></li>
-          </ul>
+    <title>notes:)</title>
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="./Resources/css/main.css">  
+    <!-- JS -->
+    <script src="./Resources/js/subject.js" type="text/javascript" defer></script>
+</head>
+<body> <header>
+    <nav class="navigation">
+      <div>
+        <img src="Resources/img/logo.jpeg"  id="logo" alt="logo" />
+        <ul class="main-nav">
+          <!-- <li><a href="#" id="pp">UPLOAD</a></li> -->
+          <li><a href="./index.php " id="up">LOG OUT</a></li>
+        </ul>
         </div>
-      </nav>
-    </header>
-<!-----------------------------------------box---------------------------------------->
-    <section class="plans">
-      <div class="row">
-        <h2>Welcome TO LPNN!!</h2>
-        <p id="fullForm">Learning path for newbies and novices </p>
-      </div>
-      <div class="row">
-        <div class="col span-1-of-4">
-          <div class="plan-box">
-            <div class="card">
-            <div class="front">
-              <p><span style="font-size: 40px;">L:</span>
-              stands for learning. It is a process that leads to change, which occurs as a result of experience and increases the potential for improved performance and future learning. The change in the learner may happen at the level of knowledge, attitude or behavior. As a result of learning, learners come to see concepts, ideas, and/or the world differently.</p>              
+    </nav>
+  </header>
+  <div class = "small-container">
+    <div class=" row">
+        
+        <!-- Sidebar  -->
+        <nav id="sidebar" class="col-2">
+            <div class="sidebar-header">
+                <h2>Choose Semester</h2>
             </div>
-            <div class="back">
-              <img src="./Resources/img/suar.jpeg" class="backImg" >
-            </div>           
-          </div>
-        </div>
-        </div>
-        <div class="col span-1-of-4">
-          <div class="plan-box">
-            <div class="card">
-            <div class="front">
-              <p><span style="font-size: 40px;">P:</span> stands for path . It is described as the chosen route taken by a learner through a range ofe-learning activities, which allows them to build knowledge progressively. With learning path, the control of choice moves away from the tutor to the learner. For any particular topic, such a path would provide both a theory of instruction and a guideline for teachers and curriculum developers"</p>
-            </div>
-            <div class="back">
-                <img src="./Resources/img/sakshi.jpeg" class="backImg">
-            </div>
-          </div>
-            
-          </div>
-        </div>
-        <div class="col span-1-of-4">
-          <div class="plan-box">
-            <div class="card">
-              <div class="front">
-                <p><span style="font-size: 40px;">N:</span>stands for newbies. It  is a point for those students who has just started learning a activity and fresher in the current field. Superiors of the newbies will help them by giving thier notes or study material by uploading in the LPNN!!</p>
-              </div>
-            <div class="back">
-                <img src="./Resources/img/lolodile.jpeg" class="backImg">
-            </div>
-            </div>      
-          </div>
-        </div>
-        <div class="col span-1-of-4">
-          <div class="plan-box">
-            <div class="card">
-              <div class="front">
-                <p><span style="font-size: 40px;">N:</span>stands for novices. Novices are those person who are new and without experience in a field, situation, etc. It  is a point for those freshers who has just started working . They can access the notes of their teachers and Superiors for better guidance to approch their goals.</p>
-              </div>
-            <div class="back">
-                <img src="./Resources/img/baba.jpg" class="backImg">
-            </div>
-            </div>
-
-            
-          </div>
-        </div>
-      </div>
-    </section>
-  <!----------------------------------------footer------------------------------------------------->
-    <footer>
-      <div class="row">
-        <div class="col span-1-of-2">
-          <h4>ABOUT:</h4><br>
-          <p id="lvm">
-            LPNN is a point for the teachers and students which help to intreact with each other easily. With simple steps teacher and superiors can upload notes . We are here to make learning easy to easier.They can access the notes of their teachers and Superiors for better guidance to approch their goals. 
-          </p>
-        </div>
-        <div class="col span-1-of-2">
-          <div>
-            <h4>DEVELOPERS:</h4>
-            <ul id="devo">
-              <li class="devo"><a href="https://github.com/Arsenal-47" target="_blank"><i style="font-size:40px" class="fa">&#xf09b;</i></a></li>
-              <li class="devo"><a href="https://github.com/NamanJain1711" target="_blank"><i style="font-size:40px" class="fa">&#xf09b;</i></a></li>
-              <li class="devo"><a href="https://github.com/lakshaylvm" target="_blank"><i style="font-size:40px" class="fa">&#xf09b;</i></a></li>
-              <li class="devo"><a href="https://github.com/Pankaj-01" target="_blank"><i  style="font-size:40px" class="fa">&#xf09b;</i></a></li>
+            <div class="left-container">
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#semfirst" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">First Semester</a>
+                    <ul class="collapse list-unstyled" id="semfirst">
+                        <li id="phy">
+                            <a href="#" >Physics</a>
+                        </li>
+                        <li>
+                            <a href="#">Maths 1</a>
+                        </li>
+                        <li>
+                            <a href="#">BEE</a>
+                        </li>
+                        <li>
+                            <a href="#">English</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semsecond" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Second Semester</a>
+                    <ul class="collapse list-unstyled" id="semsecond">
+                        <li>
+                            <a href="#">Maths 2</a>
+                        </li>
+                        <li>
+                            <a href="#">PPS</a>
+                        </li>
+                        <li>
+                            <a href="#">Chemistry</a>
+                        </li><li>
+                            <a href="#">WT</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semthird" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Third Semester</a>
+                    <ul class="collapse list-unstyled" id="semthird">
+                        <li class="firstsubject"><a href="#">DBMS</a></li>
+                        <li class="firstsubject"><a href="#">Maths 3</a></li>
+                        <li class="firstsubject"><a href="#">Data Structure</a></li>
+                        <li class="firstsubject"><a href="#">Python</a></li>
+                        <li class="firstsubject"><a href="#">Digital Electronics</a></li>
+                        <li class="firstsubject"><a href="#">Economics</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semfourth" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Fourth Semester</a>
+                    <ul class="collapse list-unstyled" id="semfourth">
+                        <li class="firstsubject"><a href="#">Web Technology</a></li>
+                        <li class="firstsubject"><a href="#">Discrete Mathematics</a></li>
+                        <li class="firstsubject"><a href="#">OOPS</a></li>
+                        <li class="firstsubject"><a href="#">Operating System</a></li>
+                        <li class="firstsubject"><a href="#">Organizational Behaviour</a></li>
+                        <li class="firstsubject"><a href="#">COA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semfifth" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Fifth Semester</a>
+                    <ul class="collapse list-unstyled" id="semfifth">
+                        <li class="firstsubject"><a href="#">Microprocessor</a></li>
+                <li class="firstsubject"><a href="#">Computer Networks</a></li>
+                <li class="firstsubject"><a href="#">ADA</a></li>
+                <li class="firstsubject"><a href="#">JAVA</a></li>
+                <li class="firstsubject"><a href="#">Software Engg.</a></li>
+                <li class="firstsubject"><a href="#">TOC/FLA</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semsixth" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Sixth Semester</a>
+                    <ul class="collapse list-unstyled" id="semsixth">
+                        <li class="firstsubject"><a href="#">MWC</a></li>
+                        <li class="firstsubject"><a href="#">ADBMS</a></li>
+                        <li class="firstsubject"><a href="#">Data Science</a></li>
+                        <li class="firstsubject"><a href="#">Advanced Java</a></li>
+                        <li class="firstsubject"><a href="#">Artificial Intelligence</a></li>
+                        <li class="firstsubject"><a href="#">Compiler Design</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semseventh" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Seventh Semester</a>
+                    <ul class="collapse list-unstyled" id="semseventh">
+                        <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                        <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                        <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                        <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#semeighth" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Eighth Semester</a>
+                    <ul class="collapse list-unstyled" id="semeighth">
+                <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                <li class="firstsubject"><a href="#">Uploading Soon...</a></li>
+                    </ul>
+                </li>
             </ul>
-          </div>
-          <h4 id="copyh4">Copyright © 2022 All Rights Reserved by LPNN!!</h4>
-        </div>
-      </div>
-  </footer>
+
+            </div>
+        </nav>
+       
+        <div class="col">
+            <div id="physics" class="row">
+                <div class="col" id="donate1">
+                    <a href="./Resources/files/Unit[1] - Electronic Materials.pdf" target="_blank"> <img src="./Resources/img/t9i-edit-book-covers-online.jpg-840.jpg" class ="rounded pt-2 mr-5" height="97%" width="30%"></a>  
+                <a href="./Resources/files/Unit[1] - Electronic Materials.pdf" target="_blank"> <img src="./Resources/img/t9i-edit-book-covers-online.jpg-840.jpg" class ="rounded pt-2 ml-5" height="97%" width="30%"></a> 
+               
+            
+                </div> 
+                 <div class="col" id="donate2" >
+                    <a href="./Resources/files/Unit[1] - Electronic Materials.pdf" target="_blank"> <img src="./Resources/img/t9i-edit-book-covers-online.jpg-840.jpg" class ="rounded pt-2 mr-5" height="97%" width="30%"></a>  
+                    <a href="./Resources/files/Unit[1] - Electronic Materials.pdf" target="_blank"> <img src="./Resources/img/t9i-edit-book-covers-online.jpg-840.jpg" class ="rounded pt-2 ml-5" height="97%" width="30%"></a> 
+                </div>
+            </div>
+            <div class="col text-center" id="blur">
+                <!-- 
+                echo"Hey, Welcome my friend welcome!!!!!!!!".$_SESSION['username'];?> -->
+                <?php
+                 echo "aao ".$_SESSION['name']; ?>
+            </div>
+        </div>  
+           
+
+            <div class="col-1" id="donate"><h3>News Feed</h3> </div>
+        
+</div>
+        
+</div>
+       
    
-    <!----------------------------------------------- LOGIN ------------------------------------------>
-    <div class="user_info user_login" id="log">
-    <div class="col login ">
-      <h1>LOGIN</h1>
-      <form method="post" action="./validation.php" class="contact-form">
-        <div class="row text">
-          <div class="row username">
-            <div class="col span-1-of-3">
-              <label for="name">UserName</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input
-                type="text"
-                name="username"
-                id="name"
-                placeholder="User Name"
-                required
-              />
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label for="email">Password</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Your Password"
-                required
-              />
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="submit" value="LOGIN"/>
-            </div>
-          </div>
-          <div id="btn">
-            Don't have account ? <a href="#" id="signup-bttn">Sign up</a>
-          </div>
-        </div>
-      </form>
-    </div>
-    </div>
-
-    <!-------------------------------------------- signup ----------------------------------------------->
-    <div class="user_info user_login" id="signups">
-    <div class="col signup-main">
-      <h1 class="log">SIGN UP</h1>
-      <form method="post" action="./conn.php" class="contact-form">
-        <div class="row text">
-          <div class="row sign">
-            <div class="col span-1-of-3">
-              <label for="name">Name</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input
-                type="text"
-                name="name"
-                id="name"
-                placeholder="Name"
-                required
-              />
-            </div>
-          </div>
-          <div class="row sign">
-            <div class="col span-1-of-3">
-              <label for="name">UserName</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input
-                type="text"
-                name="username"
-                id="name"
-                placeholder="User Name"
-                required
-              />
-            </div>
-          </div>
-          <div class="row sign">
-            <div class="col span-1-of-3">
-              <label for="email" >Password</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input
-                type="password"
-                name="password"
-                id="password"
-                placeholder="Password"
-                required
-              />
-              <span id = "message" style="color:red"> </span> 
-            </div>
-          </div>
-          <!-- <div class="row sign">
-            <div class="col span-1-of-3">
-              <label for="confirm">Confirm</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input
-                type="password"
-                name="confirm"
-                placeholder="Confirm Password"
-                required
-                id="txtConfirmPassword"
-              />
-            </div>
-          </div> -->
-          <div class="row sign">
-            <div class="col span-1-of-3">
-              <label for="name">User</label>
-            </div>
-            <div class="col span-2-of-3">
-              <ul>
-             <li> <input
-                type="radio"
-                name="user"
-                id="name"
-                placeholder="Teacher"
-                value="teacher"
-                required
-              />
-              <label>Teacher</label></li>
-              <li><input
-                type="radio"
-                name="user"
-                id="name"
-                placeholder="Student"
-                value="student"
-                required
-              />
-              <label>Student</label></li>
-              </ul>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col span-1-of-3">
-              <label>&nbsp;</label>
-            </div>
-            <div class="col span-2-of-3">
-              <input type="submit" value="Sign up" id="thuk"/>
-            </div>
-          </div>
-          <div id="ftr">
-            Already have an account! <a href="#" id="logs">Log in</a>
-          </div>
-        </div>
-      </form>
-    </div>
-    </div>
     
-  </body>
-</html>
 
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> -->
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#sidebarCollapse').on('click', function () {
+                $('#sidebar').toggleClass('active');
+            });
+        });
+    </script>
+</body>
+
+</html>
