@@ -42,13 +42,13 @@
                         <li id="phy">
                             <a href="#" >Physics</a>
                         </li>
-                        <li>
+                        <li  id="maths1">
                             <a href="#">Maths 1</a>
                         </li>
-                        <li>
+                        <li id="bee">
                             <a href="#">BEE</a>
                         </li>
-                        <li>
+                        <li id="english">
                             <a href="#">English</a>
                         </li>
                     </ul>
@@ -56,15 +56,16 @@
                 <li>
                     <a href="#semsecond" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">Second Semester</a>
                     <ul class="collapse list-unstyled" id="semsecond">
-                        <li>
+                        <li id="maths2">
                             <a href="#">Maths 2</a>
                         </li>
-                        <li>
+                        <li id="pps">
                             <a href="#">PPS</a>
                         </li>
-                        <li>
+                        <li id="chem">
                             <a href="#">Chemistry</a>
-                        </li><li>
+                        </li>
+                        <li id="wt">
                             <a href="#">WT</a>
                         </li>
                     </ul>

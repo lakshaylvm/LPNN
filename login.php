@@ -15,8 +15,15 @@ $num = mysqli_num_rows($result);
 if($num==1){
     $_SESSION['name']= $name;
     $user= $data['username'] ;
-    header('location:./main.php');
+     header('location:./main.php');
+    // if($user=="student"){
+    //      header('location:./main.php');
+    // }
+    // else{
+    //     header("location:./index.php");
+    // }
 }
 else{
-    header('location:./index.php');}
+    header('location:./index.php');
+}
 ?>
